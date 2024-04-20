@@ -122,6 +122,8 @@ function pesquisaDifusa(valor, pagina) {
     }
   });
 
+  console.log(resultados)
+
   // Ordena os itens pelos resultados
   const resultadosOrdenados = resultados.map(({ item, score }) => ({ item, score }))
   .sort((a, b) => {

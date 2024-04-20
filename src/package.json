@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "start": "nodemon ./backend/app.js"
+    "start": "nodemon ./backend/app.js",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "dependencies": {
     "ejs": "^3.1.9",
@@ -9,6 +11,7 @@
     "sqlite3": "^5.1.6"
   },
   "devDependencies": {
+    "cypress": "^13.8.0",
     "nodemon": "^2.0.22"
   }
 }
