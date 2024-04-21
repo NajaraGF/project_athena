@@ -16,6 +16,18 @@ describe('Teste de Input e Paginação', () => {
     // Verifica se a paginação está visível
     cy.get('.paginacao').should('be.visible')
 
+    // Aguarda um curto período para permitir que a página mude
+    cy.wait(3000)
+
+    // Verifica se a primeira página da paginação está visível
+    cy.get('.paginacao-link').contains('1').should('be.visible')
+
+    // Verifica se a segunda página da paginação está visível
+    cy.get('.paginacao-link').contains('2').should('be.visible')
+
+    // Clicar no checkbox para selecionar a primeira página
+    cy.get('.paginacao-link').contains('1').click()
+    
     // Clica na primeira página da paginação
     cy.get('.paginacao-link').contains('1').click()
 
