@@ -8,7 +8,7 @@ describe('Teste de Input e Paginação', () => {
 
     // Digita o texto desejado no input
     cy.get('#input-pesquisa').type('Teste')
-    cy.get ('data-input-pesquisa').type('width: 450px')
+    
 
     // Adiciona uma pausa opcional para observar o que está acontecendo
     cy.wait(1000) // Aguarda 1 segundo
